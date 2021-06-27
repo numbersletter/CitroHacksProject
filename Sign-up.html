@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="google-signin-client_id" content="645767432176-0aahgc69d9tjfmt0uisv4v0ju08rmh8l.apps.googleusercontent.com">
+  </head>
+  <body> 
+    <script src="script.js"></script>
+  </body>
+    <div class="navbar">
+    <a>🐬 Mellow Mentors</a> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <div class="navbar-right">
+          <a  href="https://CitroHacks-Project.alyssacheung.repl.co/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="https://CitroHacks-Project.alyssacheung.repl.co/Matching.html"><i class="fa fa-fw fa-user"></i> Matching</a>
+          <a  href="https://CitroHacks-Project.alyssacheung.repl.co/Extra.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+          <a class="active" href="https://CitroHacks-Project.alyssacheung.repl.co/Sign-up.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
+          </div>
+    </div>
+  <div class="sign-up-form">
+    <img src="user.png">
+    <h1>Sign Up Now<h1>
+    <form>
+    <input type="email" class="input-box" placeholder="Your Email"><br>
+    <input type="password" class="input-box" placeholder="Your Password"><br>
+    <button type="button" class="signup-btn">Sign up</button>
+    <hr>
+    <p class="or">OR</p>
+   <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <p>Already have an account? <a href="#">Log in</a></p>
+    </form>
+
+</html>

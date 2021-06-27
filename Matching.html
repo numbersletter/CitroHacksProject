@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body> 
+    <script src="script.js"></script>
+  </body>
+    <div class="navbar">
+    <a>🐬 Mellow Mentors</a> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <div class="navbar-right">
+          <a  href="https://CitroHacks-Project.alyssacheung.repl.co/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a class="active" href="https://CitroHacks-Project.alyssacheung.repl.co/Matching.html"><i class="fa fa-fw fa-user"></i> Matching</a>
+          <a  href="https://CitroHacks-Project.alyssacheung.repl.co/Extra.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+          <a  href="https://CitroHacks-Project.alyssacheung.repl.co/Sign-up.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
+          </div>
+    </div>
+  <h1>Match with a Mentor</h1>
+  <p>By providing your time availabilities with us, we will be able to match you with a psychologist      fit for your personal schedule.</p>
+  <div class="container">
+    <h1>Times Available</h1>
+    <p>Please check <b>ALL</b> the boxes that correspond with your time availability.</p>
+    <div class="group">
+      <input type="checkbox" id="56A" name="tm" value="5"/>
+      <label for="56A">5AM-6AM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="67A" name="tm" value="6"/>
+      <label for="67A">6AM-7AM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="78A" name="tm" value="7"/>
+      <label for="78A">7AM-8AM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="89A" name="tm" value="8"/>
+      <label for="89A">8AM-9AM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="910A" name="tm" value="9"/>
+      <label for="910A">9AM-10AM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="1011A" name="tm" value="10"/>
+      <label for="1011A">10AM-11AM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="1112A" name="tm" value="11"/>
+      <label for="1112A">11AM-12PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="121P" name="tm" value="12"/>
+      <label for="121P">12PM-1PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="12P" name="tm" value="13"/>
+      <label for="12P">1PM-2PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="23P" name="tm" value="14"/>
+      <label for="23P">2PM-3PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="34P" name="tm" value="15"/>
+      <label for="34P">3PM-4PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="45P" name="tm" value="16"/>
+      <label for="45P">4PM-5PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="56P" name="tm" value="17"/>
+      <label for="56P">5PM-6PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="67P" name="tm" value="18"/>
+      <label for="67P">6PM-7PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="78P" name="tm" value="19"/>
+      <label for="78P">7PM-8PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="89P" name="tm" value="20"/>
+      <label for="89P">8PM-9PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="910P" name="tm" value="21"/>
+      <label for="910P">9PM-10PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="1011P" name="tm" value="22"/>
+      <label for="1011P">10PM-11PM</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="1112P" name="tm" value="23"/>
+      <label for="1112P">11PM-12AM</label>
+    </div>
+  </div>
+  <button class = "button" onclick="time()" id="btn">Submit</button>
+  
+  <div class="container">
+   <h1>Days Available</h1>
+    <p>Please check <b>ALL</b> the boxes that correspond with your availability.</p>
+    <div class="group">
+      <input type="checkbox" id="Sun" name="da" value="Sunday"/>
+      <label for="Sun">Sunday</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="Mon" name="da" value="Monday"/>
+      <label for="Mon">Monday</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="Tues" name="da" value="Tuesday"/>
+      <label for="Tues">Tuesday</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="Wed" name="da" value"Wednesday"/>
+      <label for="Wed">Wednesday</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="Thurs" name="da" value="Thursday"/>
+      <label for="Thurs">Thursday</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="Fri" name="da" value="Friday"/>
+      <label for="Fri">Friday</label>
+    </div>
+
+    <div class="group">
+      <input type="checkbox" id="Sat" name="da" value"Saturday"/>
+      <label for="Sat">Saturday</label>
+    </div>
+  </div>
+
+  <button class = "button" onclick="input()" >Submit</button>
+  
+</html>
